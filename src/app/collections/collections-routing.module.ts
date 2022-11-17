@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+/** @format */
 
-import { CollectionsHomeComponent } from './collections-home/collections-home.component';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
 
-const routes: Routes = [
-  { path: 'collections', component: CollectionsHomeComponent }
-];
+import { CollectionsHomeComponent } from "./collections-home/collections-home.component";
+
+const routes: Routes = [{ path: "", component: CollectionsHomeComponent }];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule],
 })
 export class CollectionsRoutingModule {}
